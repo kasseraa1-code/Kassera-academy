@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KASSERA ACADEMY — Espace élève</title>
+<style>
+:root{--bg:#070707;--panel:#11110f;--panel2:#17140e;--gold:#d1a84d;--gold2:#f0d27d;--text:#f6f1e6;--muted:#aaa397;--line:#332d20;--ok:#b9d7a0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 0,#6b501c18,transparent 34%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1080px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#080808eb;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:12px}.logo{font-family:Georgia,serif;letter-spacing:.16em;color:var(--gold2);font-size:18px}
+.nav{display:flex;gap:10px;align-items:center}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);padding:11px 16px;background:linear-gradient(135deg,#9d762c,#e2bd60);color:#111;font-weight:800;border-radius:4px;cursor:pointer}.ghost{background:transparent;color:var(--gold2)}
+.hero{padding:58px 0 34px}.eyebrow{font-size:11px;letter-spacing:.22em;color:var(--gold2);font-weight:800}.hero h1{font:clamp(40px,8vw,66px)/1 Georgia,serif;color:#f1dfad;margin:15px 0 10px}.hero h1 em{color:var(--gold);font-style:normal}.lead{color:var(--muted);max-width:760px;line-height:1.65}
+.dashboard{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin:28px 0}.card{background:linear-gradient(145deg,#15130f,#0e0e0d);border:1px solid var(--line);padding:22px;border-radius:6px}.card h2{font:30px/1.1 Georgia,serif;color:#efda9d;margin:0 0 10px}.progress{height:10px;background:#25221c;border-radius:20px;overflow:hidden;margin:18px 0 8px}.fill{height:100%;width:18%;background:linear-gradient(90deg,#9c7429,#efd079)}.small{font-size:12px;color:#888277}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:15px;background:#0b0b0a;border:1px solid var(--line)}.stat b{display:block;font-size:24px;color:var(--gold2)}.stat span{font-size:12px;color:#8f8a80}
+.section{padding:28px 0}.section h2{font:34px/1.1 Georgia,serif;color:#efda9d;margin:0 0 7px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}.lesson{background:linear-gradient(145deg,#15130f,#0d0d0c);border:1px solid var(--line);padding:18px;border-radius:6px}.lesson-top{display:flex;justify-content:space-between;gap:12px}.tag{font-size:11px;letter-spacing:.12em;color:var(--gold);font-weight:800}.lesson h3{margin:7px 0 6px;font-size:17px}.lesson p{color:#9d978b;font-size:13px;line-height:1.55;margin:0 0 14px}.locked{color:#777;font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.mini{padding:9px 12px;font-size:12px}
+.notice{margin:20px 0;padding:15px 16px;border:1px solid #725823;background:#171207;color:#c9bc9c;border-radius:5px;line-height:1.55;font-size:13px}.notice strong{color:#f0d27d}
+.quiz{display:none;margin-top:14px;padding:18px;background:#0a0a09;border:1px solid var(--line);border-radius:5px}.quiz.active{display:block}.q{margin-bottom:16px}.q b{display:block;margin-bottom:9px}.option{display:block;margin:7px 0;color:#c9c3b8;font-size:13px}.result{margin-top:12px;color:var(--ok);font-weight:700}.certificate{display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px}
+footer{border-top:1px solid var(--line);margin-top:35px;padding:28px 0;color:#777;font-size:12px}
+@media(max-width:760px){.dashboard,.grid,.stats,.certificate{grid-template-columns:1fr}.nav .ghost{display:none}.hero{padding-top:38px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="index.html">KASSERA ACADEMY</a>
+<div class="nav"><a class="btn ghost" href="index.html">← Accueil</a></div>
+</nav></div></header>
+
+<main class="wrap">
+<section class="hero">
+<div class="eyebrow">ESPACE ÉLÈVE · MODULE 1</div>
+<h1>MARKETING <em>DIGITAL</em></h1>
+<p class="lead">Votre parcours de formation KASSERA ACADEMY : cours, progression, quiz, évaluation finale et certificat.</p>
+<div class="notice"><strong>Version de préparation :</strong> cette page constitue l’interface de l’espace élève. L’activation sécurisée après paiement Stripe et la connexion personnelle seront branchées à l’étape suivante.</div>
+</section>
+
+<section class="dashboard">
+<div class="card">
+<div class="eyebrow">VOTRE PARCOURS</div>
+<h2>Module 1 — Fondamentaux du marketing digital</h2>
+<p class="lead">11 parties progressives construites à partir du contenu pédagogique fourni.</p>
+<div class="progress"><div class="fill"></div></div>
+<div class="small">18 % de progression — aperçu de l’interface</div>
+</div>
+<div class="card">
+<div class="stats">
+<div class="stat"><b>11</b><span>parties</span></div>
+<div class="stat"><b>11</b><span>quiz</span></div>
+<div class="stat"><b>1</b><span>évaluation finale</span></div>
+</div>
+<div style="margin-top:14px" class="small">Certificat : verrouillé jusqu’à validation du parcours.</div>
+</div>
+</section>
+
+<section class="section" id="cours">
+<div class="eyebrow">COURS</div>
+<h2>Les 11 parties du Module 1</h2>
+<div class="grid">
+<script>
+const lessons=[
+["1A","Fondamentaux du marketing","Comprendre la définition du marketing, ses objectifs, son évolution et son rôle dans l’entreprise."],
+["1B","Marketing mix — les 4P","Maîtriser Produit, Prix, Distribution et Communication et leur articulation."],
+["1C","Segmentation, ciblage, positionnement et personas","Identifier les segments, choisir une cible et construire un positionnement clair."],
+["1D","Analyse de l’environnement marketing","Lire l’environnement externe et interne pour éclairer les décisions marketing."],
+["1E","Comportement du consommateur","Comprendre besoins, motivations, freins et processus de décision."],
+["1F","Études de marché","Structurer une étude : problématique, collecte, analyse et interprétation."],
+["1G","Stratégie marketing","Passer du diagnostic aux objectifs, choix stratégiques et plan d’action."],
+["1H","Branding et gestion de la marque","Construire une identité cohérente et une valeur de marque durable."],
+["1I","Communication marketing","Choisir les messages, canaux et dispositifs adaptés aux objectifs."],
+["1L","Réseaux sociaux et Social Media Marketing","Définir une présence sociale cohérente, éditoriale et mesurable."],
+["1M","E-mail Marketing","Construire une stratégie e-mail : audience, messages, campagnes et suivi."]
+];
+document.write(lessons.map((x,i)=>`
+<article class="lesson">
+<div class="lesson-top"><span class="tag">${x[0]}</span><span class="locked">🔒 Accès membre</span></div>
+<h3>${x[1]}</h3>
+<p>${x[2]}</p>
+<div class="actions">
+<button class="btn ghost mini" onclick="showPreview(${i})">Aperçu</button>
+<button class="btn ghost mini" onclick="showQuiz(${i})">Quiz</button>
+</div>
+<div id="preview-${i}" class="quiz"></div>
+<div id="quiz-${i}" class="quiz"></div>
+</article>`).join(""));
+</script>
+</div>
+</section>
+
+<section class="section">
+<div class="card certificate">
+<div>
+<div class="eyebrow">VALIDATION</div>
+<h2>Évaluation finale</h2>
+<p class="lead">Après les parties et les quiz, l’élève pourra passer l’évaluation finale du Module 1.</p>
+</div>
+<button class="btn" onclick="alert('L’évaluation finale sera activée lorsque le compte élève sera connecté et que le parcours sera terminé.')">Évaluation verrouillée</button>
+</div>
+</section>
+
+<section class="section">
+<div class="card certificate">
+<div>
+<div class="eyebrow">CERTIFICAT</div>
+<h2>Certificat KASSERA ACADEMY</h2>
+<p class="lead">Le certificat sera délivré après validation des conditions de réussite définies pour le Module 1.</p>
+</div>
+<div style="font-size:42px">🎓</div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">© KASSERA ACADEMY — Espace formation · Interface de préparation</div></footer>
+
+<script>
+const previews=[
+"Le marketing est un processus global qui commence par la compréhension des besoins d’un marché et se poursuit jusqu’à la création d’une relation durable avec le client. La publicité n’est qu’un outil parmi d’autres.",
+"Le marketing mix regroupe classiquement les 4P : Produit, Prix, Place (distribution) et Promotion (communication).",
+"La segmentation consiste à découper le marché en groupes cohérents ; le ciblage consiste à sélectionner les segments prioritaires ; le positionnement précise la place recherchée dans l’esprit de la cible.",
+"L’analyse de l’environnement aide l’entreprise à repérer les facteurs qui peuvent influencer ses décisions et ses résultats.",
+"Le comportement du consommateur étudie notamment les besoins, motivations, freins et étapes qui interviennent dans la décision d’achat.",
+"Une étude de marché vise à réduire l’incertitude en recueillant et en analysant des informations pertinentes sur un marché, ses clients et ses concurrents.",
+"Une stratégie marketing relie le diagnostic, les objectifs, les choix de marché et les actions nécessaires à leur mise en œuvre.",
+"Le branding concerne la construction et la gestion de l’identité, de la perception et de la valeur de la marque.",
+"La communication marketing organise les messages et les canaux utilisés pour atteindre des objectifs auprès de publics définis.",
+"Le Social Media Marketing s’appuie sur des plateformes sociales, une ligne éditoriale, des contenus et des indicateurs de performance.",
+"L’e-mail marketing permet de communiquer directement avec une audience grâce à des campagnes et scénarios mesurables."
+];
+function showPreview(i){
+ const el=document.getElementById("preview-"+i);
+ el.classList.toggle("active");
+ el.innerHTML=el.classList.contains("active")?`<b>Aperçu de la leçon</b><p style="color:#aaa;margin-bottom:0">${previews[i]}</p>`:"";
+}
+function showQuiz(i){
+ const el=document.getElementById("quiz-"+i);
+ if(i!==0){
+   el.classList.toggle("active");
+   el.innerHTML=el.classList.contains("active")?`<b>Quiz ${i+1}</b><p style="color:#aaa;margin-bottom:0">Le quiz complet de cette partie sera intégré dans la prochaine étape.</p>`:"";
+   return;
+ }
+ el.classList.add("active");
+ el.innerHTML=`
+ <div class="q"><b>1. Le marketing se limite-t-il à la publicité ?</b>
+ <label class="option"><input type="radio" name="q1" value="0"> Oui</label>
+ <label class="option"><input type="radio" name="q1" value="1"> Non</label></div>
+ <div class="q"><b>2. Le marketing commence-t-il uniquement au moment de la vente ?</b>
+ <label class="option"><input type="radio" name="q2" value="0"> Oui</label>
+ <label class="option"><input type="radio" name="q2" value="1"> Non</label></div>
+ <button class="btn mini" onclick="gradeQuiz()">Valider le quiz</button>
+ <div id="quiz-result" class="result"></div>`;
+}
+function gradeQuiz(){
+ const a=document.querySelector('input[name="q1"]:checked');
+ const b=document.querySelector('input[name="q2"]:checked');
+ const r=document.getElementById("quiz-result");
+ if(!a||!b){r.textContent="Sélectionnez une réponse pour chaque question.";return;}
+ const score=(a.value==="1"?1:0)+(b.value==="1"?1:0);
+ r.textContent=`Résultat : ${score}/2 — aperçu du système de quiz.`;
+}
+</script>
+</body>
+</html>
